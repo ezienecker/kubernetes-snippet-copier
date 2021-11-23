@@ -1,0 +1,18 @@
+.btn-clipboard {
+    position: absolute;
+    top: 0.90rem;
+    right: 0.65rem;
+    z-index: 10;
+    display: block;
+    padding: 0.25rem 0.5rem;
+    font-size: .65em;
+    color: #3371e3;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 0.25rem;
+}
+
+.btn-clipboard:hover {
+    background-color: #3371e3;
+    color: #fff;
+}
