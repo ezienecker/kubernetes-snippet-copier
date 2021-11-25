@@ -1,13 +1,22 @@
 {
     "name": "Kubernetes Snippet Copier",
-    "action": {},
-    "manifest_version": 3,
-    "version": "1.0.0",
     "description": "Kubernetes Snippet Copier is a tool to copy code snippets from the k8s documentation easily and quickly",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "kubernetes-snippet-copier16.png",
+        "32": "kubernetes-snippet-copier32.png",
+        "48": "kubernetes-snippet-copier48.png",
+        "128": "kubernetes-snippet-copier128.png"
+    },
     "permissions": [
         "activeTab",
         "scripting"
     ],
+    "host_permissions": ["*://kubernetes.io/docs/*"],
+    "action": {
+        "default_icon": "kubernetes-snippet-copier16.png"
+    },
     "content_scripts": [
         {
             "matches": [
