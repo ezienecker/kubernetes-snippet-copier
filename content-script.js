@@ -28,6 +28,6 @@ function createCopyButton() {
 }
 
 function copySnippetToClipboard() {
-    var snippet = this.innerText.slice(0, -4);
+    var snippet = this.innerText.slice(0, -4).trim();
     navigator.clipboard.writeText(snippet);
 }
